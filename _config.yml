@@ -1,0 +1,38 @@
+# Site settings
+title: "Speech LLM Arena"
+description: "A curated collection of Speech Understanding Large Language Models"
+baseurl: "/speechllm_series"
+url: ""
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: null
+
+# Plugins
+plugins:
+  - jekyll-sitemap
+
+# Collections
+collections:
+  models:
+    output: false
+
+# Default values
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "default"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .bundle
+  - .sass-cache
+  - README.md
+  - AGENTS.md

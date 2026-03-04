@@ -1,0 +1,472 @@
+models:
+- name: WavPrompt
+  year: 2022
+  institution: University of Illinois at Urbana-Champaign
+  tasks:
+  - Speech Understanding
+  - ASR
+  architecture: wavvec 2.0 base + gpt2
+  open_source: true
+  github_url: https://github.com/Hertin/WavPrompt
+  github_stars: 50
+  paper_url: https://arxiv.org/pdf/2203.15863
+  demo_url: ''
+  huggingface_url: https://huggingface.co/stepfun-ai/Step-Audio-2-mini-Base
+  license: Proprietary
+  languages:
+  - English
+  performance: []
+  description: Waveform-based Large Language Model with dual encoders for comprehensive speech understanding.
+- name: Speechverse
+  year: 2024
+  institution: Amazon
+  tasks:
+  - Speech Understanding
+  architecture: Pretrained Audio Encoder + 1-D CNN + Pretrained LLM
+  parameters: Variable
+  open_source: false
+  github_url: ''
+  github_stars: 0
+  paper_url: https://arxiv.org/pdf/2405.08295
+  demo_url: ''
+  huggingface_url: ''
+  license: Unknown
+  languages:
+  - English
+  performance: []
+  description: Universal speech understanding framework with pretrained audio and language models.
+- name: DeSTA
+  year: 2024
+  institution: NVIDIA / National Taiwan University
+  tasks:
+  - Speech Understanding
+  architecture: Whisper-large-v3 + Modality Adapter + Llama2-7b-chat
+  parameters: 7B
+  open_source: true
+  github_url: https://github.com/kehanlu/Nemo/tree/desta/examples/multimodal/DeSTA
+  github_stars: 150
+  paper_url: https://arxiv.org/pdf/2406.18871
+  demo_url: ''
+  huggingface_url: ''
+  license: MIT
+  languages:
+  - English
+  - Chinese
+  performance: []
+  description: Deep Speech Text Alignment model with novel Q-Former based alignment mechanism.
+- name: Mala-ASR
+  year: 2024
+  institution: x-lance
+  tasks:
+  - ASR
+  architecture: WavLM-Large + Vicuna 7B
+  parameters: 7B
+  open_source: true
+  github_url: https://github.com/X-LANCE/SLAM-LLM/tree/main/examples/mala_asr_slidespeech
+  github_stars: 0
+  paper_url: https://arxiv.org/pdf/2406.05839
+  demo_url: ''
+  huggingface_url: ''
+  license: Unknown
+  languages:
+  - English
+  performance: []
+  description: Massive Language Model ASR with WavLM encoder and LLaMA backbone.
+- name: Qwen2-Audio
+  year: 2024
+  institution: Alibaba
+  tasks:
+  - Speech Understanding
+  - Audio Processing
+  - ASR
+  architecture: Whisper-large-v3 + Avg-Pool + Qwen-7B
+  parameters: 7B
+  open_source: true
+  github_url: https://github.com/QwenLM/Qwen2-Audio
+  github_stars: 1200
+  paper_url: https://arxiv.org/pdf/2407.10759
+  demo_url: https://huggingface.co/spaces/Qwen/Qwen2-Audio-Instruct-Demo
+  huggingface_url: https://huggingface.co/Qwen/Qwen2-Audio-7B
+  license: Apache-2.0
+  languages:
+  - English
+  - Chinese
+  - Multilingual
+  performance: []
+  description: Improved version of Qwen-Audio with enhanced Whisper-v3 encoder and Qwen2 backbone.
+- name: SeedASR
+  year: 2024
+  institution: ByteDance
+  tasks:
+  - ASR
+  - Speech Understanding
+  architecture: LUISE Encoder + Converter/Projector + Pretrained LLM
+  parameters: Variable
+  open_source: false
+  github_url: ''
+  github_stars: 0
+  paper_url: https://arxiv.org/pdf/2407.04675
+  demo_url: https://bytedancespeech.github.io/seedasr_tech_report/
+  huggingface_url: ''
+  license: Proprietary
+  languages:
+  - English
+  - Chinese
+  performance: []
+  description: ByteDance's production ASR and speech understanding model with LUISE encoder.
+- name: LLaST
+  year: 2024
+  institution: The Chinese University of Hong Kong
+  tasks:
+  - Speech Understanding
+  architecture: Whisper-large-v2 + Transformer + TinyLlama-1.1B-Chat/Llama2-7B-Chat/Llama2-13B-Chat
+  parameters: 7B
+  open_source: true
+  github_url: https://github.com/openaudiolab/LLaST
+  github_stars: 100
+  paper_url: https://arxiv.org/pdf/2407.15415
+  demo_url: ''
+  huggingface_url: ''
+  license: Apache-2.0
+  languages:
+  - English
+  performance: []
+  description: Large Language and Speech Transformer with dual encoders for robust speech understanding.
+- name: DeSTA2
+  year: 2024
+  institution: National Taiwan University / NVIDIA
+  tasks:
+  - Speech Understanding
+  architecture: Whisper-small + modality-apdapter + Llama3-8B-Instruct
+  parameters: 8B
+  open_source: true
+  github_url: https://github.com/kehanlu/DeSTA2
+  github_stars: 80
+  paper_url: https://arxiv.org/pdf/2409.20007
+  demo_url: ''
+  huggingface_url: https://huggingface.co/DeSTA-ntu/DeSTA2-8B-beta
+  license: MIT
+  languages:
+  - English
+  - Chinese
+  performance: []
+  description: DeSTA version 2 with upgraded LLaMA-3 backbone and improved alignment.
+- name: IdealLLM
+  year: 2024
+  institution: Northwestern Polytechnical University / Chongqing Changan Automobile
+  tasks:
+  - Speech Understanding
+  - Multilingual
+  architecture: 'Whisper Large-v3 + MMS + adapter + phi-3-mini
+
+    model'
+  parameters: 3.8B
+  open_source: false
+  github_url: ''
+  github_stars: 0
+  paper_url: https://arxiv.org/pdf/2409.11214
+  demo_url: ''
+  huggingface_url: ''
+  license: Unknown
+  languages:
+  - English
+  - Multilingual
+  performance: []
+  description: Ideal Speech Language Model with dual encoders for multilingual speech understanding.
+- name: Speech LLaMA
+  year: 2023
+  institution: Microsoft
+  tasks:
+  - Speech Understanding
+  - ASR
+  architecture: Light Audio Encoder + CTC Compression + LLaMA-7B
+  parameters: 7B
+  open_source: false
+  github_url: ''
+  github_stars: 0
+  paper_url: https://arxiv.org/pdf/2307.03917
+  demo_url: ''
+  huggingface_url: ''
+  license: Unknown
+  languages:
+  - English
+  performance: []
+  description: Efficient speech-enabled LLaMA with lightweight encoder and CTC compression.
+- name: OSUM
+  year: 2025
+  institution: ASLP Lab
+  tasks:
+  - Speech Understanding
+  architecture: Whisper-Medium + 1-D CNN + Transformer + Qwen2-7B-Instruct
+  parameters: 7B
+  open_source: true
+  github_url: https://github.com/ASLP-lab/OSUM
+  github_stars: 50
+  paper_url: https://arxiv.org/pdf/2501.13306
+  demo_url: https://aslp-lab.github.io/osum-echat.github.io/
+  huggingface_url: https://huggingface.co/ASLP-lab/OSUM-EChat
+  license: Apache-2.0
+  languages:
+  - English
+  - Chinese
+  performance: []
+  description: Open Speech Understanding Model with open-source training pipeline.
+- name: FireRedASR-LLM
+  year: 2025
+  institution: Xiaohongshu
+  tasks:
+  - ASR
+  - Speech Understanding
+  architecture: 'Conformer + Linear + Qwen2-Instruct-7B '
+  parameters: 7B
+  open_source: true
+  github_url: https://github.com/FireRedTeam/FireRedASR
+  github_stars: 200
+  paper_url: https://arxiv.org/pdf/2501.14350
+  demo_url: https://huggingface.co/spaces/FireRedTeam/FireRedASR
+  huggingface_url: https://huggingface.co/FireRedTeam/FireRedASR-LLM-L
+  license: Apache-2.0
+  languages:
+  - English
+  - Chinese
+  performance: []
+  description: Open-source ASR LLM with Conformer encoder and Qwen2 instruction-following backbone.
+- name: Audio Flamingo 2
+  year: 2025
+  institution: NVIDIA
+  tasks:
+  - Audio Understanding
+  - Captioning
+  architecture: AF-CLAP + Gated Cross Attention + Qwen2.5-3B
+  parameters: 3B
+  open_source: true
+  github_url: https://github.com/NVIDIA/audio-flamingo/tree/audio_flamingo_2
+  github_stars: 700
+  paper_url: https://arxiv.org/pdf/2503.03983
+  demo_url: https://research.nvidia.com/labs/adlr/AF2/
+  huggingface_url: https://huggingface.co/nvidia/audio-flamingo-2
+  license: MIT
+  languages:
+  - English
+  performance: []
+  description: Second generation of Audio Flamingo with improved AF-CLAP encoder and Qwen2.5 backbone.
+- name: LegoSLM
+  year: 2025
+  institution: Google / university of Cambridge
+  tasks:
+  - Speech Understanding
+  architecture: USM + CTC Layer + Gemma-2B
+  parameters: 2B
+  open_source: false
+  github_url: ''
+  github_stars: 0
+  paper_url: https://arxiv.org/pdf/2505.11352
+  demo_url: ''
+  huggingface_url: ''
+  license: Proprietary
+  languages:
+  - English
+  - Multilingual
+  performance: []
+  description: Lego Speech Language Model - Modular speech LLM with USM encoder and Gemma decoder.
+- name: DeSTA2.5-Audio
+  year: 2025
+  institution: National Taiwan University
+  tasks:
+  - Audio Understanding
+  architecture: Whisper-large-v3 + Q-Former + Llama-3.1-8B-Instruct
+  parameters: 8B
+  open_source: true
+  github_url: https://github.com/kehanlu/DeSTA2.5-Audio
+  github_stars: 60
+  paper_url: https://arxiv.org/pdf/2507.02768
+  demo_url: ''
+  huggingface_url: https://huggingface.co/collections/DeSTA-ntu/desta25-audio
+  license: MIT
+  languages:
+  - English
+  performance: []
+  description: DeSTA 2.5 for general audio understanding with latest Llama-3.1 backbone.
+- name: MiDashengLM
+  year: 2025
+  institution: xiaomi
+  tasks:
+  - Speech Understanding
+  - Audio Processing
+  architecture: Dasheng-0.6B + MLP + Qwen2.5-Omni-7B
+  parameters: 7B
+  open_source: true
+  github_url: https://github.com/xiaomi-research/dasheng-lm
+  github_stars: 300
+  paper_url: https://arxiv.org/pdf/2508.03983
+  demo_url: https://xiaomi-research.github.io/dasheng-lm/
+  huggingface_url: https://huggingface.co/models?search=midashenglm-7b
+  license: Apache-2.0
+  languages:
+  - English
+  - Chinese
+  performance: []
+  description: Xiaomi's speech understanding model with Dasheng audio encoder and Qwen2.5-Omni.
+- name: MinMo
+  year: 2025
+  institution: Alibaba
+  tasks:
+  - Speech Understanding
+  - Dialogue
+  architecture: SenseVoice-large Encoder + Transformer + CNN Qwen2.5-7B-instruct
+  parameters: Unknown
+  open_source: false
+  github_url: ''
+  github_stars: 0
+  paper_url: https://arxiv.org/pdf/2501.06282
+  demo_url: https://funaudiollm.github.io/minmo/
+  huggingface_url: ''
+  license: Unknown
+  languages:
+  - English
+  performance: []
+  description: Minimal Speech Model for efficient speech understanding and dialogue.
+- name: Qwen2.5-Omni
+  year: 2025
+  institution: Alibaba
+  tasks:
+  - Speech Understanding
+  - Audio Processing
+  - Multimodal
+  - Vision
+  architecture: Whisper-large-v3 + Qwen2.5-7B
+  parameters: 7B
+  open_source: true
+  github_url: https://github.com/QwenLM/Qwen2.5-Omni
+  github_stars: 0
+  paper_url: https://arxiv.org/pdf/2503.20215
+  demo_url: https://huggingface.co/spaces/Qwen/Qwen2.5-Omni-7B-Demo
+  huggingface_url: https://huggingface.co/collections/Qwen/qwen25-omni
+  license: Apache-2.0
+  languages:
+  - English
+  - Chinese
+  - Multilingual
+  performance: []
+  description: Omni-modal version of Qwen 2.5 supporting audio, text, and vision in unified architecture.
+- name: Kimi-Audio
+  year: 2025
+  institution: kimi
+  tasks:
+  - Speech Understanding
+  - Audio Processing
+  - Long Context
+  architecture: GLM-4-Voice Tokenizer + Whisper-Large-v3 + adapter + Qwen2.5-7B + MoonCast Detokenizer
+  parameters: Unknown
+  open_source: true
+  github_url: https://github.com/MoonshotAI/Kimi-Audio
+  github_stars: 0
+  paper_url: https://arxiv.org/pdf/2504.18425
+  demo_url: ''
+  huggingface_url: https://huggingface.co/moonshotai/Kimi-Audio-7B
+  license: Proprietary
+  languages:
+  - English
+  - Chinese
+  performance: []
+  description: Moonshot AI's audio understanding model with extended context capabilities.
+- name: Audio Flamingo 3
+  year: 2025
+  institution: NVIDIA
+  tasks:
+  - Audio Understanding
+  - Captioning
+  architecture: AF-Whisper + Qwen-2.5-7B
+  parameters: Variable
+  open_source: true
+  github_url: https://github.com/NVIDIA/audio-flamingo
+  github_stars: 0
+  paper_url: https://arxiv.org/pdf/2507.08128
+  demo_url: https://audioflamingo3.github.io/
+  huggingface_url: https://huggingface.co/nvidia/audio-flamingo-3
+  license: Proprietary
+  languages:
+  - English
+  performance: []
+  description: Third generation of Audio Flamingo with state-of-the-art audio understanding.
+- name: Step-Audio 2
+  year: 2025
+  institution: StepFun Audio
+  tasks:
+  - Speech Understanding
+  - Audio Processing
+  architecture: Custom Audio Encoder + Custom LLM
+  parameters: Unknown
+  open_source: true
+  github_url: https://github.com/stepfun-ai/Step-Audio2
+  github_stars: 0
+  paper_url: https://arxiv.org/pdf/2507.16632
+  demo_url: ''
+  huggingface_url: https://huggingface.co/stepfun-ai/Step-Audio-2-mini-Base
+  license: Proprietary
+  languages:
+  - English
+  - Chinese
+  performance: []
+  description: StepFun's second-generation audio model with enhanced understanding capabilities.
+- name: MiMo-Audio
+  year: 2025
+  institution: xiaomi
+  tasks:
+  - Speech Understanding
+  architecture: Custom Audio Encoder + MiMo-7B-Base
+  parameters: Unknown
+  open_source: true
+  github_url: ''
+  github_stars: 0
+  paper_url: https://arxiv.org/pdf/2512.23808
+  demo_url: https://huggingface.co/spaces/XiaomiMiMo/mimo_audio_chat
+  huggingface_url: https://huggingface.co/collections/XiaomiMiMo/mimo-audio
+  license: Proprietary
+  languages:
+  - English
+  - Chinese
+  performance: []
+  description: Xiaomi's audio understanding model for mobile and IoT applications.
+- name: UALM
+  year: 2025
+  institution: NVIDIA
+  tasks:
+  - Universal Audio
+  - Multimodal
+  architecture: AF-Whisper + MLP + Qwen2.5-7B
+  parameters: Unknown
+  open_source: true
+  github_url: https://github.com/NVIDIA/audio-intelligence/tree/main/UALM
+  github_stars: 0
+  paper_url: https://arxiv.org/pdf/2510.12000
+  demo_url: https://research.nvidia.com/labs/adlr/UALM/
+  huggingface_url: ''
+  license: Unknown
+  languages:
+  - English
+  performance: []
+  description: Universal Audio Language Model for diverse audio understanding tasks.
+- name: Qwen3-Omni
+  year: 2025
+  institution: Alibaba
+  tasks:
+  - Speech Understanding
+  - Audio Processing
+  - Multimodal
+  - Vision
+  architecture: AuT + MoE Transformer
+  parameters: Variable
+  open_source: true
+  github_url: https://github.com/QwenLM/Qwen3-Omni
+  github_stars: 0
+  paper_url: https://arxiv.org/pdf/2509.17765
+  demo_url: https://huggingface.co/spaces/Qwen/Qwen3-Omni-Demo
+  huggingface_url: https://huggingface.co/collections/Qwen/qwen3-omni
+  license: Apache-2.0
+  languages:
+  - English
+  - Chinese
+  - Multilingual
+  performance: []
+  description: Next-generation omni-modal model from Alibaba integrating Qwen3 capabilities.
